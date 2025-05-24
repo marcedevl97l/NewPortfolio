@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "motion": "^12.12.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.27.2"
+  }
+}

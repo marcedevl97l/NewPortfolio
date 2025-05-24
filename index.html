@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio (in progress..)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div><strong>Portfolio</strong></div>
+    <nav>
+      <a href="#home">Personal</a>
+      <a href="#services">Servicios</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+    <button class="button">Contacto</button>
+  </header>
+
+  <section class="hero" id="home">
+    <div>
+      <div class="title">FullStack<br />Developer</div>
+      <p>Hi, I’m Duwy. A UI/UX Designer crafting intuitive digital experiences.</p>
+    </div>
+    <img src="assets/images/perfil.jfif" class="profile-img" alt="Duwy profile image">
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>Design has always been more than just a job – it's my passion.</p>
+  </section>
+
+  <section class="section services" id="services">
+    <h2>Services</h2>
+    <div id="react-services-container">
+    </div>
+  </section>
+
+  <section class="section experience" id="experience">
+    <h2>Experience</h2>
+    <div id="react-experience-container">
+    </div>
+  </section>
+
+  <section class="section portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+    <div id="react-portfolio-container">
+    </div>
+  </section>
+
+  <section class="section testimonial" id="testimonial">
+    <h2>Testimonial</h2>
+    <div id="react-testimonial-container">
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Let's Connect</h2>
+    <button class="button">Hire Me Now</button>
+  </section>
+
+  <footer>
+    <p>&copy; All rights reserved @Duwy</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
+  <script src="js/script.js" defer></script>
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- sections react -->
+  <script type="text/babel" src="js/react-services.js"></script>
+  <script type="text/babel" src="js/react-experience.js"></script>
+  <script type="text/babel" src="js/react-portfolio.js"></script>
+  <script type="text/babel" src="js/react-testimonials.js"></script>
+
+
+</body>
+
+</html>
