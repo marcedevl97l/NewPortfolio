@@ -1,0 +1,46 @@
+/* src/app/components/experience/experience.component.css */
+.experience-list {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.experience-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+}
+
+.experience-details h3 {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+.experience-details p {
+  font-size: 0.95em;
+  color: #666;
+}
+
+.experience-years {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--primary-color);
+  flex-shrink: 0;
+  margin-left: 30px; /* Espacio entre el texto y los años */
+}
+
+@media (max-width: 768px) {
+  .experience-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .experience-years {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}

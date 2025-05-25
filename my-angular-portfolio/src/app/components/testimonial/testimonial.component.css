@@ -1,0 +1,45 @@
+/* src/app/components/testimonial/testimonial.component.css */
+.testimonial-card {
+  background-color: var(--card-bg);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-card .quote {
+  font-size: 1.4em;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: var(--heading-color);
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.author-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+}
+
+.author-name {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: block;
+}
+
+.author-title {
+  font-size: 0.9em;
+  color: #777;
+}

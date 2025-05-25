@@ -1,0 +1,112 @@
+/* src/app/components/footer/footer.component.css */
+footer {
+  background-color: var(--background-dark);
+  color: white;
+  padding-top: 80px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  text-align: left;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-col h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer-col h4 {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+  position: relative;
+}
+
+.footer-col h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.footer-col p,
+.footer-col ul li {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  transition: color var(--transition-speed);
+}
+.footer-col ul li a:hover {
+  color: var(--primary-color);
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5em;
+  transition: color var(--transition-speed);
+}
+.social-icons a:hover {
+  color: var(--primary-color);
+}
+/* Asegúrate de tener FontAwesome para los íconos de redes sociales */
+
+.footer-bottom {
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05); /* Separador sutil */
+}
+
+.footer-bottom p {
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #aaa;
+  font-size: 0.8em;
+  margin: 0 10px;
+  transition: color var(--transition-speed);
+}
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-col h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}

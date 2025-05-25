@@ -1,0 +1,9 @@
+<div class="experience-list">
+  <div *ngFor="let item of experienceItems" class="experience-item">
+    <div class="experience-details">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+    </div>
+    <div class="experience-years">{{ item.years }}</div>
+  </div>
+</div>

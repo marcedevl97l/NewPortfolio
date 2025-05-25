@@ -1,0 +1,271 @@
+/* src/app/app.component.css */
+/* Estilos para el componente principal AppComponent que envuelve las secciones */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+
+.hero-section {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: white;
+  padding-top: 80px; /* Para que el contenido no se oculte detrás del header */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row; /* Por defecto en desktop */
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  text-align: left; /* Alineación de texto a la izquierda en desktop */
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 11rem; 
+  font-weight: 350;
+  line-height: 0.9;
+  letter-spacing: -9px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.company-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+.company-logos img {
+  height: 25px; /* Ajusta el tamaño de los logos */
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.company-logos img:hover {
+  opacity: 1;
+}
+
+.hero-image-profile {
+  flex-shrink: 0;
+  position: relative;
+  text-align: center;
+}
+
+.profile-main-img {
+  width: 400px; 
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+  border-radius: 10px;
+}
+
+.profile-info-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* --- About Section --- */
+.about-section {
+  background-color: #f0f0f0;
+}
+
+.about-flex {
+  display: flex;
+  gap: 50px;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.about-left,
+.about-right {
+  flex: 1;
+}
+
+.section-subtitle {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #007bff; /* Color de la subtítulo */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.about-left h2 {
+  font-size: 2.2em;
+  margin-bottom: 30px;
+}
+
+.about-video-placeholder {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Ratio 16:9 */
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.play-button {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+/* Asegúrate de tener FontAwesome si quieres el icono de play */
+/* O simplemente usa un carácter '▶' o una imagen SVG */
+
+.about-right p {
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.about-stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stat-item h3 {
+  font-size: 2.5em;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+.stat-item p {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* --- Services Section --- */
+.services-section {
+  background-color: var(--background-dark);
+  color: white;
+  text-align: left; /* Alineación del texto a la izquierda como en el diseño */
+}
+.services-section h2,
+.services-section p,
+.services-section .button {
+  color: white; /* Asegura que el texto y el botón sean blancos */
+}
+
+.services-intro {
+  margin-bottom: 50px;
+  text-align: left;
+}
+.services-intro h2 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: white;
+}
+.services-intro .button {
+  background-color: white;
+  color: var(--primary-color);
+}
+.services-intro .button:hover {
+  background-color: #eee;
+  color: var(--primary-color);
+}
+
+/* --- Portfolio Section --- */
+.portfolio-section {
+  background-color: var(--background-dark);
+  color: white;
+}
+.portfolio-section h2 {
+  color: white;
+}
+.portfolio-tagline {
+  font-size: 1.2em;
+  margin-top: -30px; /* Para que esté más cerca del título */
+  margin-bottom: 50px;
+  color: #ccc;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+  background-color: var(--background-dark);
+  color: white;
+  padding: 80px 0;
+}
+.contact-section h2 {
+  font-size: 3em;
+  color: white;
+  margin-bottom: 40px;
+}
+.contact-section .button.inverted {
+  background-color: white;
+  color: var(--primary-color);
+}
+.contact-section .button.inverted:hover {
+  background-color: #eee;
+  color: var(--primary-color);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .hero-content,
+  .about-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 3.5em;
+  }
+
+  .profile-main-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2.5em;
+  }
+}
