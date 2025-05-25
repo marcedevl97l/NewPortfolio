@@ -2,6 +2,7 @@
 New Portfolio, for new oportunities 
 
 (Angular Structure)>>
+```text
 my-angular-portfolio/
 ├── src/
 │   ├── index.html                   # Punto de entrada HTML (carga FontAwesome)
@@ -46,3 +47,4 @@ my-angular-portfolio/
 │       └── images/
 │           ├── ...
 └── angular.json                     # Archivo de configuración principal de Angular CLI
+```
