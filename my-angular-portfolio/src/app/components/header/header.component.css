@@ -18,6 +18,11 @@ header {
   text-decoration: none;
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .header-nav a {
   color: black;
   text-decoration: none;
@@ -51,10 +56,15 @@ header {
   .header-nav {
     display: none; /* Puedes implementar un menú hamburguesa aquí */
   }
+
   header {
     justify-content: center; /* Centrar el logo si no hay nav */
   }
   .header-right .button {
     display: none; /* O mostrarlo como parte del menú móvil */
   }
+}
+
+@media (max-width: 390px) {
+
 }

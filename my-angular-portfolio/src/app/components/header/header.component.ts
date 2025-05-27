@@ -1,6 +1,6 @@
 // src/app/components/header/header.component.ts
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Asegúrate de esto
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',

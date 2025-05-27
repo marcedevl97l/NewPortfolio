@@ -1,0 +1,23 @@
+<section id="notes" class="section dark-section">
+  <div class="container notes-container">
+    <h2 class="section-title">My Digital Nexus: Notes & Knowledge</h2>
+    <p class="section-subtitle">A glimpse into my organized mind – where thoughts become interconnected insights.</p>
+
+    <div class="notes-grid">
+      <div *ngFor="let platform of notesPlatforms" class="note-card">
+        <div class="card-header">
+          <i [class]="platform.icon" class="note-icon"></i>
+          <h3>{{ platform.name }}</h3>
+        </div>
+        <p>{{ platform.description }}</p>
+        <a [href]="platform.link" target="_blank" class="card-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="notes-cta">
+      <h3>Want to dive deeper into my workflow?</h3>
+      <p>I'm always refining my knowledge management system. Reach out if you're curious!</p>
+      <a href="#contact" class="button">Let's Connect</a>
+    </div>
+  </div>
+</section>
