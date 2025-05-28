@@ -38,7 +38,7 @@ import {
 export class PortfolioComponent {
   projects = [
     {
-      src: 'assets/images/portfolio-web-design.jpg',
+      src: '../assets/images/webdesigncard1.png',
       alt: 'Web Design Project',
       title: 'Web Design for Startup',
       description:
@@ -46,7 +46,7 @@ export class PortfolioComponent {
       tags: ['Web Design', 'UI/UX'],
     },
     {
-      src: 'assets/images/portfolio-mobile-app.jpg',
+      src: '../assets/images/webdesigncard2.png',
       alt: 'Mobile App Project',
       title: 'Mobile App for Recipes',
       description:
@@ -54,7 +54,7 @@ export class PortfolioComponent {
       tags: ['Mobile App', 'UI/UX'],
     },
     {
-      src: 'assets/images/portfolio-dashboard.jpg',
+      src: '../assets/images/webdesigncard3.png',
       alt: 'Dashboard Project',
       title: 'Analytics Dashboard',
       description:
@@ -63,7 +63,7 @@ export class PortfolioComponent {
     },
     // Añade más proyectos según tu imagen
     {
-      src: 'assets/images/portfolio-project4.jpg',
+      src: '../assets/images/webdesigncard4.png',
       alt: 'Project 4',
       title: 'E-commerce Redesign',
       description:
@@ -71,7 +71,7 @@ export class PortfolioComponent {
       tags: ['E-commerce', 'Redesign'],
     },
     {
-      src: 'assets/images/portfolio-project5.jpg',
+      src: '../assets/images/webdesigncard5.png',
       alt: 'Project 5',
       title: 'Brand Identity',
       description:
@@ -79,7 +79,7 @@ export class PortfolioComponent {
       tags: ['Branding', 'Graphic Design'],
     },
     {
-      src: 'assets/images/portfolio-project6.jpg',
+      src: '../assets/images/webdesigncard6.png',
       alt: 'Project 6',
       title: 'SaaS Onboarding Flow',
       description:

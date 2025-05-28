@@ -1,24 +1,19 @@
 /* src/app/components/notes/notes.component.css */
 
-.notes-section {
-  background-color: red;
-}
 .notes-container {
-  text-align: center;
-  padding: 80px 20px;
-  background-color: blue;
+  text-align: left;
 }
 
 .notes-container .section-title {
-  color: black; /* Usar el color primario para el título */
+  color: black;
   margin-bottom: 20px;
   font-size: 2.8em;
-  text-shadow: 0 0 10px rgba(var(--primary-color-rgb), 0.5); /* Efecto futurista */
+  text-shadow: 0 0 10px rgba(black, 0.5);
 }
 
 .notes-container .section-subtitle {
   font-size: 1.2em;
-  color:white; /* Un color de texto más claro para el subtítulo */
+  color:black;
   margin-bottom: 60px;
   max-width: 700px;
   margin-left: auto;
@@ -115,7 +110,7 @@
 
 .notes-cta h3 {
   font-size: 2em;
-  color: white;
+  color: black;
   margin-bottom: 15px;
 }
 

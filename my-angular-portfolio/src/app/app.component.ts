@@ -17,12 +17,10 @@ import { NotesComponent } from './components/notes/notes.component';
   standalone: true,
   imports: [
     CommonModule,
-    //RouterOutlet,
     HeaderComponent,
     ServicesComponent,
     ExperienceComponent,
     PortfolioComponent,
-    TestimonialComponent,
     FooterComponent,
     NotesComponent,
   ],

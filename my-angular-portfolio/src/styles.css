@@ -2,11 +2,9 @@
 
 /* --- Resets y variables CSS --- */
 :root {
-  --primary-color: #000000; /* Un azul de ejemplo para botones, etc. */
-  --text-color: #333;
+  --primary-color: #000000; 
+  --text-color: black;
   --heading-color: #1a1a1a;
-  --background-light: #f8f8f8;
-  --background-dark: #dddcdc;
   --card-bg: #fff;
   --border-color: #e0e0e0;
   --transition-speed: 0.3s;
@@ -96,24 +94,15 @@ a:hover {
   display: inline-block;
 }
 
-.section h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: var(--primary-color);
-  margin: 10px auto 0;
-  border-radius: 2px;
-}
 
 /* Estilos para el background oscuro general del final */
 
 .dark-section {
-  background-color: var(--background-dark);
   color: black;
+  
 }
 .dark-section h2,
 .dark-section h3,
 .dark-section p {
-  color: white;
+  color: black;
 }

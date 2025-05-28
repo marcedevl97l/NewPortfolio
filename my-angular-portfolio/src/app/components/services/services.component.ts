@@ -12,24 +12,24 @@ import { CommonModule } from '@angular/common';
 export class ServicesComponent {
   serviceItems = [
     {
-      title: 'Social Ads',
+      title: 'Social Media Marketing',
       description:
-        'Attract new customers by running paid campaigns on social media.',
+        'Atraiga nuevos clientes ejecutando campañas creativas en las redes sociales.',
     },
     {
       title: 'Search Engineer',
       description:
-        'Boost your online visibility and organic traffic with tailored SEO strategies.',
+        'Aumente su visibilidad en línea y su tráfico orgánico con estrategias SEO personalizadas.',
     },
     {
       title: 'Content Marketing',
       description:
-        'Create engaging and valuable content that attracts and retains your audience.',
+        'Cree contenido atractivo y valioso que atraiga y retenga a su audiencia..',
     },
     {
       title: 'SaaS Marketing',
       description:
-        'Drive growth for your SaaS product with targeted marketing strategies.',
+        'Impulse el crecimiento de su producto SaaS con estrategias de marketing específicas.',
     },
   ];
 }

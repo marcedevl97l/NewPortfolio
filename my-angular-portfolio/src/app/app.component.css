@@ -8,8 +8,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #ffffff;
-  color: white;
+  color: black;
   padding-top: 0;
 }
 
@@ -20,10 +19,12 @@
   justify-content: space-between;
   gap: 50px;
   text-align: left;
+  margin: 2rem;
 }
 
 .hero-text {
-  flex: 1;
+  display: flex;
+  flex-direction: row;
 }
 
 .hero-text h1 {
@@ -62,7 +63,7 @@
   height: 500px;
   object-fit: cover;
   border-radius: 10px;
-  border-radius: 10px;
+  margin: 0 2rem 0 2rem;
 }
 
 .profile-info-box {
@@ -79,7 +80,8 @@
 
 /* --- About Section --- */
 .about-section {
-  background-color: var(--background-dark);
+  margin: 2rem;
+  border: 1px solid black;
 }
 
 .about-flex {
@@ -97,10 +99,14 @@
 .section-subtitle {
   font-size: 0.9em;
   font-weight: 500;
-  color: black; /* Color de la subtítulo */
+  color: black;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: inline-block;
 }
 
 .about-left h2 {
@@ -178,14 +184,15 @@
 
 /* --- Services Section --- */
 .services-section {
-  background-color: white;
   color: black;
-  text-align: left; /* Alineación del texto a la izquierda como en el diseño */
+  text-align: left;
+  margin: 2rem;
+  border: 1px solid black;
 }
 .services-section h2,
 .services-section p,
 .services-section .button {
-  color: white; /* Asegura que el texto y el botón sean blancos */
+  color: black; 
 }
 
 .services-intro {
@@ -195,7 +202,7 @@
 .services-intro h2 {
   font-size: 2.8em;
   margin-bottom: 20px;
-  color: white;
+  color: black;
 }
 .services-intro .button {
   background-color: white;
@@ -206,30 +213,52 @@
   color: var(--primary-color);
 }
 
+/* --- Experience Section --- */
+.experience-section {
+  color: black;
+  text-align: left;
+  margin: 2rem;
+  border: 1px solid black;
+}
+
 /* --- Portfolio Section --- */
 .portfolio-section {
-  background-color: white;
-  color: white;
+  color: black;
+  margin: 2rem;
+  border: 1px solid black;
+  text-align: left;
 }
 .portfolio-section h2 {
-  color: white;
+  color: black;
 }
 .portfolio-tagline {
   font-size: 1.2em;
   margin-top: -30px; /* Para que esté más cerca del título */
   margin-bottom: 50px;
-  color: #ccc;
+  color: black;
+  
 }
+
+/* --- Notes Section -- */
+.notes-section {
+  color: black;
+  text-align: left;
+  margin: 2rem;
+  border: 1px solid black;
+}
+
 
 /* --- Contact Section --- */
 .contact-section {
-  background-color: var(--background-dark);
-  color: white;
+  color: black;
   padding: 80px 0;
+  margin: 2rem;
+  border: 1px solid black;
+  display: flex;
 }
 .contact-section h2 {
   font-size: 3em;
-  color: white;
+  color: black;
   margin-bottom: 40px;
 }
 .contact-section .button.inverted {
@@ -239,6 +268,14 @@
 .contact-section .button.inverted:hover {
   background-color: #eee;
   color: var(--primary-color);
+}
+
+.contact-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 /* --- Responsive Adjustments --- */
@@ -264,20 +301,22 @@
   }
 }
 
+/* Laptop or Tablet */
 @media (max-width: 768px) {
+  .hero-section {
+    padding-top: 0;
+    display: flex;
+  }
   .hero-text h1 {
     font-size: 8em;
   }
-  .hero-section {
-    padding-top: 0;
+  .hero-text {
+    flex-direction: column;
   }
-  .profile-info-box {
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 500;
+  .profile-main-img {
+    width: 250px;
+    height: 400px;
+    margin: 2rem;
   }
 }
 

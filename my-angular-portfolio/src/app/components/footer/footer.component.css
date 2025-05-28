@@ -1,6 +1,6 @@
 /* src/app/components/footer/footer.component.css */
 footer {
-  background-color: var(--background-dark);
+  background-color: rgb(192, 192, 192);
   color: white;
   padding-top: 80px;
 }
@@ -17,13 +17,13 @@ footer {
 .footer-col h3 {
   font-size: 1.8em;
   margin-bottom: 10px;
-  color: white;
+  color: black;
 }
 
 .footer-col h4 {
   font-size: 1.1em;
   margin-bottom: 20px;
-  color: #f0f0f0;
+  color: black;
   position: relative;
 }
 
@@ -41,7 +41,7 @@ footer {
 .footer-col ul li {
   font-size: 0.9em;
   margin-bottom: 10px;
-  color: #ccc;
+  color: black;
 }
 
 .footer-col ul {
@@ -49,7 +49,7 @@ footer {
 }
 
 .footer-col ul li a {
-  color: #ccc;
+  color: black;
   transition: color var(--transition-speed);
 }
 .footer-col ul li a:hover {
@@ -63,7 +63,7 @@ footer {
 }
 
 .social-icons a {
-  color: white;
+  color: black;
   font-size: 1.5em;
   transition: color var(--transition-speed);
 }
