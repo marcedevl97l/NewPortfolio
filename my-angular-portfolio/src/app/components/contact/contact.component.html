@@ -1,0 +1,14 @@
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      <a *ngFor="let method of contactMethods" 
+         [href]="method.link" 
+         target="_blank" 
+         class="contact-card">
+        <i [class]="method.icon"></i>
+        <h3>{{ method.name }}</h3>
+        <p>{{ method.description }}</p>
+      </a>
+    </div>
+  </div>
+</section> 

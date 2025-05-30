@@ -5,17 +5,16 @@
 .hero-section {
   font-family: "Inter", sans-serif;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  justify-content: left;
   color: black;
   padding-top: 0;
+  padding: 40px;
 }
 
 .hero-content {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: wrap;
   justify-content: space-between;
   gap: 50px;
   text-align: left;
@@ -24,7 +23,8 @@
 
 .hero-text {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .hero-text h1 {
@@ -35,6 +35,16 @@
   letter-spacing: -9px;
   color: black;
   margin-bottom: 30px;
+}
+
+.hero-description {
+  font-size: 1.4em;
+  color: #666;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 300;
 }
 
 .company-logos {
@@ -52,10 +62,11 @@
   opacity: 1;
 }
 
-.hero-image-profile {
-  flex-shrink: 0;
-  position: relative;
-  text-align: center;
+.hero-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .profile-main-img {
@@ -63,7 +74,6 @@
   height: 500px;
   object-fit: cover;
   border-radius: 10px;
-  margin: 0 2rem 0 2rem;
 }
 
 .profile-info-box {
@@ -280,24 +290,28 @@
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 900px) {
-  .hero-content,
-  .about-flex {
+  .hero-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .hero-text {
+    align-items: center;
   }
 
   .hero-text h1 {
     font-size: 3.5em;
   }
 
+  .hero-description {
+    font-size: 1.2em;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
   .profile-main-img {
     width: 250px;
     height: 250px;
-  }
-
-  .about-stats {
-    flex-direction: column;
-    gap: 20px;
   }
 }
 
@@ -310,13 +324,13 @@
   .hero-text h1 {
     font-size: 8em;
   }
-  .hero-text {
-    flex-direction: column;
+  .hero-description {
+    font-size: 1.1em;
+    padding: 0 20px;
   }
   .profile-main-img {
     width: 250px;
     height: 400px;
-    margin: 2rem;
   }
 }
 
@@ -324,7 +338,7 @@
 @media (max-width: 390px) {
   .hero-text h1 {
     font-family: "Inter", sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 350;
     line-height: 0.9;
     letter-spacing: -5px;
@@ -342,22 +356,13 @@
     padding-top: 0;
   }
 
-  .profile-info-box {
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 500;
+  .hero-text {
+    align-items: center;
   }
 
-  .hero-text h1 {
-    font-family: "Inter", sans-serif;
-    font-size: 4rem;
-    font-weight: 350;
-    line-height: 0.9;
-    letter-spacing: -5px;
-    color: black;
-    margin: 0;
+  .hero-description {
+    font-size: 1em;
+    padding: 0 15px;
+    text-align: center;
   }
 }

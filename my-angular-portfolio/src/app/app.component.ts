@@ -10,7 +10,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { NotesComponent } from './components/notes/notes.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +22,7 @@ import { NotesComponent } from './components/notes/notes.component';
     ExperienceComponent,
     PortfolioComponent,
     FooterComponent,
-    NotesComponent,
+    ContactComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
