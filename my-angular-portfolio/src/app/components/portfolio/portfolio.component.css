@@ -1,54 +1,67 @@
 /* src/app/components/portfolio/portfolio.component.css */
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
-  padding: 0 20px; /* Asegura padding si el container no lo da */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
 }
 
 .portfolio-card {
-  background-color: var(--card-bg);
-  border-radius: 10px;
+  position: relative;
+  width: 370px;
+  height: 320px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra inicial */
-  text-align: left;
-  color: var(--text-color);
-  /* transition manejada por @cardHover animation */
+  border-radius: 12px;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-card img {
   width: 100%;
-  height: 250px; /* Altura fija para las imágenes */
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
 .portfolio-info {
-  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.92);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  padding: 24px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-.portfolio-info h3 {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-  color: var(--heading-color);
-}
-
-.portfolio-info p {
-  font-size: 0.9em;
-  line-height: 1.6;
-  color: #666;
-  margin-bottom: 15px;
+.portfolio-tags {
+  margin-top: 12px;
 }
 
 .portfolio-tags span {
-  display: inline-block;
-  background-color: #e0f2f7;
-  color: var(--primary-color);
-  font-size: 0.8em;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-right: 8px;
-  margin-bottom: 8px;
-  font-weight: 500;
+  background: #fff;
+  color: #222;
+  border-radius: 8px;
+  padding: 4px 10px;
+  margin: 0 4px;
+  font-size: 0.85em;
+}
+
+@media screen and (max-width: 390px) {
+  .portfolio-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-card {
+    width: 100%;
+    height: auto;
+  }
 }

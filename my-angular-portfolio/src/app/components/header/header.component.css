@@ -47,21 +47,18 @@ header {
   width: 100%;
 }
 
-.header-right .button {
-  /* Estilos definidos en styles.css */
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .header-nav {
-    display: none; /* Puedes implementar un menú hamburguesa aquí */
+    display: none;
+    /* Implementar menu hamburguesa aqui */
   }
 
   header {
-    justify-content: center; /* Centrar el logo si no hay nav */
+    justify-content: center;
   }
   .header-right .button {
-    display: none; /* O mostrarlo como parte del menú móvil */
+    display: none;
   }
 }
 

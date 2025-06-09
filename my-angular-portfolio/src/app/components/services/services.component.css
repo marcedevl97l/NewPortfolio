@@ -7,9 +7,7 @@
 }
 
 .service-card {
-  background-color: var(
-    --background-light
-  ); /* Tarjetas blancas sobre fondo oscuro */
+  background-color: var(--background-light);
   color: var(--text-color);
   padding: 30px;
   border-radius: 10px;

@@ -38,53 +38,52 @@ import {
 export class PortfolioComponent {
   projects = [
     {
-      src: '../assets/images/webdesigncard1.png',
-      alt: 'Web Design Project',
-      title: 'Web Design for Startup',
+      src: '../assets/images/phonecover.jpeg',
+      alt: 'Proyecto de Diseño Web',
+      title: 'Desarrollo de Aplicaciones Móviles',
       description:
-        'Crafting a clean and intuitive web interface for a new tech startup, focusing on user experience and conversion optimization.',
-      tags: ['Web Design', 'UI/UX'],
+        'Creación de una interfaz web limpia e intuitiva para una nueva startup tecnológica, enfocada en la experiencia del usuario y la optimización de conversiones.',
+      tags: ['Diseño Web', 'UI/UX'],
     },
     {
-      src: '../assets/images/webdesigncard2.png',
-      alt: 'Mobile App Project',
-      title: 'Mobile App for Recipes',
+      src: '../assets/images/phonelaptopcover.jpg',
+      alt: 'Proyecto de App Móvil',
+      title: 'Aplicación Móvil de Recetas',
       description:
-        'Developing a user-friendly mobile application for iOS and Android, allowing users to discover, save, and share personalized recipes.',
-      tags: ['Mobile App', 'UI/UX'],
+        'Desarrollo de una aplicación móvil fácil de usar para iOS y Android, que permite a los usuarios descubrir, guardar y compartir recetas personalizadas.',
+      tags: ['App Móvil', 'UI/UX'],
     },
     {
-      src: '../assets/images/webdesigncard3.png',
-      alt: 'Dashboard Project',
-      title: 'Analytics Dashboard',
+      src: '../assets/images/laptopcover.jpg',
+      alt: 'Proyecto de Dashboard',
+      title: 'Panel de Analíticas',
       description:
-        'Implementing an interactive dashboard for visualizing marketing data, empowering businesses to make data-driven decisions.',
-      tags: ['Dashboard', 'Data Visualization'],
-    },
-    // Añade más proyectos según tu imagen
-    {
-      src: '../assets/images/webdesigncard4.png',
-      alt: 'Project 4',
-      title: 'E-commerce Redesign',
-      description:
-        'A complete visual and functional overhaul of an existing e-commerce platform to improve sales and user engagement.',
-      tags: ['E-commerce', 'Redesign'],
+        'Implementación de un panel interactivo para visualizar datos de marketing, permitiendo a las empresas tomar decisiones basadas en datos.',
+      tags: ['Dashboard', 'Visualización de Datos'],
     },
     {
-      src: '../assets/images/webdesigncard5.png',
-      alt: 'Project 5',
-      title: 'Brand Identity',
+      src: '../assets/images/autocover.jpg',
+      alt: 'Proyecto 4',
+      title: 'Automatización Inteligente',
       description:
-        'Developing a comprehensive brand identity system, including logo, typography, and color palette, for a new sustainable brand.',
-      tags: ['Branding', 'Graphic Design'],
+        'Reforma visual y funcional completa de una plataforma de comercio electrónico existente para mejorar las ventas y la interacción de los usuarios.',
+      tags: ['E-commerce', 'Rediseño'],
     },
     {
-      src: '../assets/images/webdesigncard6.png',
-      alt: 'Project 6',
-      title: 'SaaS Onboarding Flow',
+      src: '../assets/images/pccover.jpg',
+      alt: 'Proyecto 5',
+      title: 'Identidad de Marca',
       description:
-        'Designing an engaging and intuitive onboarding experience for a new SaaS product, minimizing friction and improving user retention.',
-      tags: ['SaaS', 'UX Flow'],
+        'Desarrollo de un sistema integral de identidad de marca, incluyendo logotipo, tipografía y paleta de colores, para una nueva marca sostenible.',
+      tags: ['Branding', 'Diseño Gráfico'],
+    },
+    {
+      src: '../assets/images/iphonecover.jpg',
+      alt: 'Proyecto 6',
+      title: 'Flujo de Onboarding para SaaS',
+      description:
+        'Diseño de una experiencia de onboarding atractiva e intuitiva para un nuevo producto SaaS, minimizando la fricción y mejorando la retención de usuarios.',
+      tags: ['SaaS', 'Flujo UX'],
     },
   ];
 

@@ -1,8 +1,8 @@
+/* --- Fuentes --- */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap");
 
-/* --- Resets y variables CSS --- */
 :root {
-  --primary-color: #000000; 
+  --primary-color: #000000;
   --text-color: black;
   --heading-color: #1a1a1a;
   --card-bg: #fff;
@@ -10,6 +10,7 @@
   --transition-speed: 0.3s;
 }
 
+/* --- Estilos Globales --- */
 *,
 *::before,
 *::after {
@@ -22,15 +23,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* --- Estilos Base del Body --- */
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
   color: var(--text-color);
-  background-color: var(--background-light);
 }
 
+/* --- Estilos de Encabezados (h1, h3, h4, h5, h6) --- */
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -44,22 +45,35 @@ h6 {
 h1 {
   font-size: 3em;
 }
-h2 {
-  font-size: 2.5em;
-}
+
 h3 {
   font-size: 1.8em;
 }
 
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin-top: 0;
+  line-height: 1.2;
+  font-size: 3em;
+  color: blue;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+/* --- Estilos de Enlaces --- */
 a {
   color: var(--primary-color);
   text-decoration: none;
   transition: color var(--transition-speed);
 }
+
 a:hover {
-  color: darken(var(--primary-color), 10%);
+  color: #333333;
 }
 
+/* --- Estilos de Botones --- */
 .button {
   background-color: white;
   color: black;
@@ -73,10 +87,11 @@ a:hover {
 }
 
 .button:hover {
-  background-color: darken(var(--primary-color), 10%);
+  background-color: #333333;
   transform: translateY(-2px);
 }
 
+/* --- Clases de Layout y Sección --- */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -88,21 +103,12 @@ a:hover {
   text-align: center;
 }
 
-.section h2 {
-  margin-bottom: 50px;
-  position: relative;
-  display: inline-block;
-}
-
-
-/* Estilos para el background oscuro general del final */
-
+/* --- Estilos para Secciones Oscuras --- */
 .dark-section {
   color: black;
-  
 }
+
 .dark-section h2,
 .dark-section h3,
 .dark-section p {
-  color: black;
 }
